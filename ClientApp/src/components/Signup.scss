@@ -1,0 +1,196 @@
+@import "../variables.scss";
+// @import url("https://use.fontawesome.com/releases/v5.3.1/css/all.css");
+
+.form-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 40rem;
+
+	margin: 5rem auto 0;
+	padding: 2rem;
+
+	.form-wrapper__title {
+		color: $color_gray_30;
+
+		width: 100%;
+
+		border-bottom: 1rem solid $color_red_flamingo;
+
+		font-size: 4.8rem;
+		font-weight: 600;
+
+		text-align: center;
+	}
+
+	.signup-form {
+		margin-top: 6rem;
+		width: 100%;
+
+		.input-container {
+			position: relative;
+
+			display: grid;
+			grid-template-columns: 7% 93%;
+
+			margin: 2.5rem 0;
+			padding: 0.5rem 0;
+
+			border-bottom: 0.2rem solid $color_gray_50;
+
+			&::before,
+			&::after {
+				content: '';
+
+				background-color: $color_blue_green;
+
+				position: absolute;
+
+				width: 0%;
+				height: 0.2rem;
+
+				bottom: -0.2rem;
+
+				transition: 300ms;
+			}
+
+			&::before {
+				left: 50%;
+			}
+
+			&::after {
+				right: 50%;
+			}
+
+			&:nth-child(1) {
+				margin-top: 0;
+			}
+
+			&__icon {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				margin-right: 0.7rem;
+
+				i {
+					color: $color_gray_75;
+
+					font-size: 3rem;
+
+					transition: 300ms;
+				}
+			}
+
+			& > div {
+				position: relative;
+
+				height: 5rem;
+
+				h5 {
+					color: $color_gray_75;
+
+					position: absolute;
+
+					right: 2rem;
+					top: 50%;
+
+					transform: translate(0, -50%);
+
+					font-size: 2.4rem;
+					font-weight: 100;
+
+					transition: 300ms;
+				}
+
+				input {
+					background: none;
+					color: $color_gray_50;
+
+					position: absolute;
+
+					width: 100%;
+					height: 100%;
+
+					top: 0;
+					right: 0;
+
+					padding: 1rem 2rem;
+
+					border: none;
+
+					outline: none;
+
+					font-size: 2.4rem;
+				}
+			}
+
+			&--focus {
+				&::before,
+				&::after {
+					width: 50%;
+				}
+
+				i {
+					color: $color_blue_green;
+				}
+
+				div h5 {
+					color: $color_blue_green;
+
+					top: -0.5rem;
+
+					font-size: 1.8rem;
+					font-weight: 600;
+				}
+			}
+		}
+
+		.singup-button {
+			background-color: $color_red_flamingo;
+			color: $color_white;
+
+			width: 100%;
+			height: 5rem;
+
+			margin-top: 2rem;
+
+			border: 0;
+			border-radius: 5rem;
+
+			font-size: 2.4rem;
+			font-weight: 800;
+
+			cursor: pointer;
+
+			&:hover {
+				background-color: $color_blue_green;
+			}
+		}
+
+		&__have-account {
+			color: $color_gray_50;
+
+			display: list-item;
+
+			margin-top: 2rem;
+
+			font-size: 1.8rem;
+
+			list-style-type: disc;
+			list-style-position: inside;
+
+			text-decoration: none;
+
+			a {
+				color: $color_blue_green;
+
+				font-size: 2.0rem;
+				font-weight: 600;
+
+				text-decoration: none;
+			}
+		}
+	}
+}

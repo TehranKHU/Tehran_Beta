@@ -27,7 +27,7 @@ const SVG = (props) => (
 						font-family="Sahel-Black, Sahel"
 						font-weight="800"
 					>
-						<tspan x="-93.305" y="0">
+						<tspan x="93.305" y="0">
 							طهران
 						</tspan>
 					</text>

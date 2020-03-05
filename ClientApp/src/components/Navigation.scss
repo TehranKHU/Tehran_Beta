@@ -1,16 +1,4 @@
-﻿$color_magenta: #ff0080;
-$color_pink: #fac0e1;
-$color_blue_green: #00ffff;
-$color_green_lime: #78fee0;
-$color_green_caribbean: #3b9a9c;
-$color_yellow: #fef4a9;
-$color_orange: #ffa563;
-$color_red_flamingo: #e64e4e;
-$color_gray_50: #808080;
-$color_gray_30: #4d4d4d;
-$color_black: #000000;
-
-$font_sahel: sahel, sans-serif;
+﻿@import "../variables.scss";
 
 header {
 	.header__background {
@@ -28,7 +16,7 @@ header {
 		margin: 0;
 
 		.header__logo {
-			order: 2;
+			order: 1;
 
 			margin-left: auto;
 			padding-right: 10rem;
@@ -37,7 +25,7 @@ header {
 		}
 
 		nav {
-			order: 1;
+			order: 2;
 
 			padding: 4rem 10rem;
 

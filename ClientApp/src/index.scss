@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 @font-face {
 	font-family: sahel;
 	font-style: normal;
@@ -18,17 +20,18 @@
 	src: url(./fonts/Sahel-Black.ttf);
 }
 
-$color_white: #ffffff;
-
 * {
 	box-sizing: border-box;
 
 	margin: 0;
 	padding: 0;
+
+	font-family: $font_sahel;
 }
 
 html {
 	background-color: $color_white;
-
 	font-size: 62.5%;
+
+	direction: rtl;
 }

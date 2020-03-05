@@ -1,0 +1,25 @@
+﻿@import "../variables.scss";
+
+footer {
+	position: absolute;
+	bottom: 0;
+
+	.footer__background {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: -99;
+	}
+
+	.footer__text-container {
+		color: $color_white;
+
+		position: relative;
+
+		right: 2rem;
+		bottom: 2rem;
+
+		font-size: 2.4rem;
+		font-weight: 600;
+	}
+}

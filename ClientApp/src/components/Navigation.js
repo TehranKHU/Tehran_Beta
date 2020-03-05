@@ -35,16 +35,16 @@ export class Navigation extends Component {
 					<nav>
 						<ul>
 							<li>
-								<a href="/about-tehran">دربارۀ طهران</a>
-							</li>
-							<li>
-								<a href="/forum">انجمن</a>
+								<a href="/signup">ثبت نام</a>
 							</li>
 							<li>
 								<a href="/login">ورود</a>
 							</li>
 							<li>
-								<a href="/signup">ثبت نام</a>
+								<a href="/forum">انجمن</a>
+							</li>
+							<li>
+								<a href="/about-tehran">دربارۀ طهران</a>
 							</li>
 						</ul>
 					</nav>
