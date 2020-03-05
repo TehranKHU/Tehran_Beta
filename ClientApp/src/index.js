@@ -1,4 +1,8 @@
-import 'bootstrap/dist/css/bootstrap.css';
+import './fonts/Sahel.ttf';
+import './fonts/Sahel-Bold.ttf';
+import './fonts/Sahel-Black.ttf';
+
+import './index.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
@@ -9,10 +13,10 @@ const baseUrl = document.getElementsByTagName('base')[0].getAttribute('href');
 const rootElement = document.getElementById('root');
 
 ReactDOM.render(
-  <BrowserRouter basename={baseUrl}>
-    <App />
-  </BrowserRouter>,
-  rootElement);
+	<BrowserRouter basename={baseUrl}>
+		<App />
+	</BrowserRouter>,
+	rootElement
+);
 
 registerServiceWorker();
-

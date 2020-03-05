@@ -1,0 +1,34 @@
+@font-face {
+	font-family: sahel;
+	font-style: normal;
+	src: url(./fonts/Sahel.ttf);
+}
+
+@font-face {
+	font-family: sahel;
+	font-style: bold;
+	font-weight: 600;
+	src: url(./fonts/Sahel-Bold.ttf);
+}
+
+@font-face {
+	font-family: sahel;
+	font-style: bold;
+	font-weight: 800;
+	src: url(./fonts/Sahel-Black.ttf);
+}
+
+$color_white: #ffffff;
+
+* {
+	box-sizing: border-box;
+
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: $color_white;
+
+	font-size: 62.5%;
+}

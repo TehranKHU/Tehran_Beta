@@ -1,0 +1,81 @@
+﻿$color_magenta: #ff0080;
+$color_pink: #fac0e1;
+$color_blue_green: #00ffff;
+$color_green_lime: #78fee0;
+$color_green_caribbean: #3b9a9c;
+$color_yellow: #fef4a9;
+$color_orange: #ffa563;
+$color_red_flamingo: #e64e4e;
+$color_gray_50: #808080;
+$color_gray_30: #4d4d4d;
+$color_black: #000000;
+
+$font_sahel: sahel, sans-serif;
+
+header {
+	.header__background {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -99;
+	}
+
+	.header__text-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		margin: 0;
+
+		.header__logo {
+			order: 2;
+
+			margin-left: auto;
+			padding-right: 10rem;
+
+			cursor: pointer;
+		}
+
+		nav {
+			order: 1;
+
+			padding: 4rem 10rem;
+
+			ul {
+				list-style: none;
+
+				font-family: $font_sahel;
+				font-size: 2.4rem;
+
+				li {
+					display: inline-block;
+
+					margin-right: 5rem;
+					padding: 0.5rem 2rem;
+
+					transition: all 100ms ease 0ms;
+
+					&:hover {
+						color: $color_black;
+
+						border-bottom: 0.2rem solid $color_black;
+						border-radius: 1rem;
+					}
+
+					a {
+						color: $color_gray_30;
+
+						// border: 10px solid $color_black;
+
+						text-decoration: none;
+
+						&:hover {
+							color: $color_gray_30;
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
