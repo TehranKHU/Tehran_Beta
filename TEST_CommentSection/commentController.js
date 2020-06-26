@@ -54,10 +54,10 @@ exports.createComment = async (req, res) => {
         function (error, results, fields) {
           if (error) throw error;
           console.log("insert success!!!");
+          res.end("Success!");
         }
       );
       conn.end();
-      res.end("Success!");
     });
   } catch (err) {
     res.status(404).json({
