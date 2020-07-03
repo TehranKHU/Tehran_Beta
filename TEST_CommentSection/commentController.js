@@ -66,3 +66,32 @@ exports.createComment = async (req, res) => {
     });
   }
 };
+
+exports.editComment = async (req, res) => {
+  try {
+    var content = "";
+    req.on("data", function (data) {
+      content += data;
+      var obj = JSON.parse(content);
+      console.log("The UserName is: " + obj.name);
+      console.log("The Comment is: " + obj.message);
+
+      var conn = con.getConnection();
+      conn.query(
+        "UPDATE comments SET comments.comments = ? WHERE name = ?",
+        [obj.message, obj.name],
+        function (error, results, fields) {
+          if (error) throw error;
+          console.log("insert success!!!");
+          res.end("Success!");
+        }
+      );
+      conn.end();
+    });
+  } catch (err) {
+    res.status(404).json({
+      status: "fail",
+      message: err,
+    });
+  }
+};
